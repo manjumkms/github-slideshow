@@ -1,0 +1,59 @@
+"""Create a class named 'Member' having the following members:
+
+Data Attributes of Member Class
+
+1 - Name
+
+2 - Age
+
+3 - Phone number
+
+4 - Address
+
+5 - Salary
+
+It also has a method named 'printSalary' which prints the salary of the members.
+
+Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' and 'Manager' classes have attributes 'specialization' and 'department' respectively. Now, assign name, age, phone number, address and salary to an employee and a manager by making an object of both of these classes and print the same.
+"""
+class member:
+
+	def __init__(self,name,age,phone,address,salary):
+
+		self.name = name
+
+		self.age = age
+
+		self.phone = phone
+
+		self.address = address
+
+		self.salary = salary
+
+	def printsalary(self):
+
+		print(self.name,self.age,self.phone,self.address,self.salary)
+
+
+
+class manager(member):
+
+	def man(self):
+
+		self.department
+
+class employee(member):
+
+	def emp(self):
+
+		self.specialization
+
+
+
+e=employee("mj",8,9794,"2-south",200)
+
+e.printsalary()
+
+m=manager("dj",9,9894,"4 north",500)
+
+m.printsalary()
